@@ -1,0 +1,25 @@
+.ORIG x3000
+lea r0, label1 ;3000
+
+jsrr r0 ;3002
+
+add r0, r0, #1 ;3004
+
+lea r0, label2 ;3006
+
+jmp r0; 3008
+
+nop ;300A
+nop ;300C
+nop ;300E
+
+
+label1 add r1, r1, #1 ;3010
+
+ret ; 3012
+
+label2 add r3, r3, #1 ; 3014
+halt ;3016
+
+.END
+

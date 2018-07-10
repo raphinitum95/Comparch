@@ -1,0 +1,8 @@
+.ORIG x3000
+add r1, r0, #1
+add r2, r0, X-5
+lshf r3, r1, #5
+rshfl r4, r2, #1
+rshfa r5, r2, #1
+HALT
+.END

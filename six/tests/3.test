@@ -1,0 +1,18 @@
+.ORIG x3000
+br a
+
+d add r3, r3, #1
+halt
+
+b add r1, r1, #1
+ret
+
+c add r2, r2, #1
+br d
+
+
+
+a add r0, r0, #1
+jsr b
+brnzp c
+.END

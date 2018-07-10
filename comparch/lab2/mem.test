@@ -1,0 +1,17 @@
+.ORIG x3000
+LEA r0, l1
+LDW r1, r0, #0
+LDB r2, r0, #0
+LDB r3, r0, #1
+
+LEA r0, l2
+LDW r0, r0, #0
+STW r1, r0, #0
+STB r1, r0, #2
+STB r1, r0, #3
+STB r1, r0, #5
+
+l1 .FILL xF2F4
+l2 .FILL x4000
+HALT
+.END

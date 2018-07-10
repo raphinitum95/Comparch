@@ -1,0 +1,46 @@
+Three types of errors:
+1: undefined labels
+2: invalid opcodes
+3: invalid constants
+call exit(n) where n is errorcode
+exit(0) for success
+
+
+
+
+
+reserved words:
+
+IN
+OUT
+GETC
+PUTS
+
+OPCODES (reserved):
+
+ADD
+AND
+BR (nzp) -- BR == BRnzp
+HALT
+JMP
+JSR
+JSRR
+LDB
+LDW
+LEA
+NOP
+NOT
+RET
+LSHF
+RSHFL
+RSHFA
+RTI
+STB
+STW
+TRAP
+XOR
+
+pseudo-ops:
+.ORIG
+.END
+.FILL

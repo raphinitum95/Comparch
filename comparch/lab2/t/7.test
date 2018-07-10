@@ -1,0 +1,14 @@
+.ORIG x3000
+lea r0, label1 
+ldw r0, r0, #0
+lea r1, number
+ldw r1, r1, #0
+stw r1, r0, #0
+ldb r2, r0, #1
+halt
+number .FILL x1f64
+label1 .FILL x4000
+.END
+
+
+

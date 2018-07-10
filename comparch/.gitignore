@@ -1,0 +1,7 @@
+*.swp
+bassembler
+TERM_PROGRAM=Apple_Terminal
+lc3.asm
+*.obj
+*.dSYM
+assembler

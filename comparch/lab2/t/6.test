@@ -1,0 +1,12 @@
+.ORIG x3000
+add r1, r1, #5
+lea r0, label1 
+ldw r0, r0, #0
+stw r1, r0, #0
+ldw r0, r0, #0
+halt
+label1 .FILL x4000
+.END
+
+
+
